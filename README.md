@@ -1,6 +1,6 @@
 2024-07-25
 
-#3.1 IntelliSense
+#3.2 Card Component
 
 # nexjs 최신 버전 설치
 
