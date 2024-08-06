@@ -1,6 +1,6 @@
 2024-08-06
 
-#3.12 Plugins
+#3.13 Conclusions
 
 # nexjs 최신 버전 설치
 
