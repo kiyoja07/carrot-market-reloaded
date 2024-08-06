@@ -1,6 +1,6 @@
 2024-08-06
 
-#3.11 Directives
+#3.12 Plugins
 
 # nexjs 최신 버전 설치
 
@@ -28,3 +28,6 @@ https://tailwindcss.com/docs/animation
 상위 상태에 따른 스타일 지정(group-{modifier})
 
 일부 상위 요소의 상태를 기반으로 요소의 스타일을 지정해야 하는 경우 상위 요소를 group 클래스로 표시하고 group-hover와 같은 group-\* 수정자를 사용하여 대상 요소의 스타일을 지정합니다.
+
+daisyUI
+Tailwind CSS용 가장 인기있는 컴포넌트 라이브러리, https://daisyui.com
