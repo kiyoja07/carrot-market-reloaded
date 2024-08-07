@@ -1,6 +1,6 @@
-2024-08-06
+2024-08-07
 
-#3.13 Conclusions
+#4.0 Home Screen
 
 # nexjs 최신 버전 설치
 

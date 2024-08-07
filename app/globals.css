@@ -4,9 +4,10 @@
 
 @layer base {
   a {
-    @apply text-blue-500;
+    @apply text-orange-500;
   }
 }
+/* a 태그에 기본 색상을 적용한다. next/link의 Link 컴포넌트는 빌드 후 a tag로 자동 변환된다.  */
 
 @layer utilities {
   .text-bigger-hello {
