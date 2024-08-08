@@ -1,6 +1,6 @@
 2024-08-07
 
-#4.0 Home Screen
+#4.1 Create Account Screen
 
 # nexjs 최신 버전 설치
 
