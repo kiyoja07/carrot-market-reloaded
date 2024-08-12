@@ -1,6 +1,6 @@
-2024-08-07
+2024-08-12
 
-#4.1 Create Account Screen
+#4.2 Form Components
 
 # nexjs 최신 버전 설치
 
