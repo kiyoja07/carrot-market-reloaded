@@ -1,6 +1,6 @@
 2024-08-19
 
-#5.0 Route Handlers
+#5.1 Server Actions
 
 # nexjs 최신 버전 설치
 
