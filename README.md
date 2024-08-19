@@ -1,6 +1,6 @@
 2024-08-19
 
-#5.1 Server Actions
+#5.2 useFormStatus
 
 # nexjs 최신 버전 설치
 
@@ -31,3 +31,10 @@ https://tailwindcss.com/docs/animation
 
 daisyUI
 Tailwind CSS용 가장 인기있는 컴포넌트 라이브러리, https://daisyui.com
+
+# React
+
+useFormStatus
+useFormStatus는 마지막 form submit의 상태 정보를 제공하는 Hook입니다.
+ex) const { pending, data, method, action } = useFormStatus();
+https://react.dev/reference/react-dom/hooks/useFormStatus
