@@ -1,6 +1,6 @@
-2024-08-19
+2024-08-20
 
-#5.2 useFormStatus
+#5.3 useFormState
 
 # nexjs 최신 버전 설치
 
@@ -38,3 +38,8 @@ useFormStatus
 useFormStatus는 마지막 form submit의 상태 정보를 제공하는 Hook입니다.
 ex) const { pending, data, method, action } = useFormStatus();
 https://react.dev/reference/react-dom/hooks/useFormStatus
+
+useFormState
+useFormState는 form action의 결과에 따라 상태를 업데이트할 수 있는 Hook입니다.
+ex) const [state, formAction] = useFormState(fn, initialState, permalink?);
+https://react.dev/reference/react-dom/hooks/useFormState
