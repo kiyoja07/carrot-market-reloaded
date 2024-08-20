@@ -1,6 +1,6 @@
 2024-08-20
 
-#5.4 Recap
+#6.0 Introduction to Zod
 
 # nexjs 최신 버전 설치
 
