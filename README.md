@@ -1,6 +1,6 @@
 2024-08-21
 
-#6.1 Validation Errors
+#6.2 Refinement
 
 # nexjs 최신 버전 설치
 
