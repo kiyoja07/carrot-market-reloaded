@@ -1,6 +1,6 @@
 2024-08-21
 
-#6.2 Refinement
+#6.3 Transformation
 
 # nexjs 최신 버전 설치
 
