@@ -1,6 +1,6 @@
-2024-08-20
+2024-08-21
 
-#6.0 Introduction to Zod
+#6.1 Validation Errors
 
 # nexjs 최신 버전 설치
 
