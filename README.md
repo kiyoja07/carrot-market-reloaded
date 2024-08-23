@@ -1,6 +1,6 @@
-2024-08-21
+2024-08-23
 
-#6.4 Refactor
+#6.6 Log In Validation
 
 # nexjs 최신 버전 설치
 
