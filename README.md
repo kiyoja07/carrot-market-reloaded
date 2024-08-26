@@ -1,6 +1,6 @@
 2024-08-26
 
-#6.8 SMS Validation
+#6.9 Recap
 
 # nexjs 최신 버전 설치
 
