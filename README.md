@@ -1,6 +1,6 @@
 2024-08-27
 
-#7.1 Schemas
+#7.2 Prisma Client
 
 # nexjs 최신 버전 설치
 
