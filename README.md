@@ -1,6 +1,6 @@
 2024-08-28
 
-#7.4 Relationships
+#7.5 onDelete
 
 # nexjs 최신 버전 설치
 
