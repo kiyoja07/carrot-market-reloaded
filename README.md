@@ -1,6 +1,6 @@
-2024-08-27
+2024-08-28
 
-#7.2 Prisma Client
+#7.4 Relationships
 
 # nexjs 최신 버전 설치
 
