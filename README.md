@@ -1,6 +1,6 @@
-2024-08-28
+2024-08-30
 
-#7.6 Recap
+#8.2 Password Hashing
 
 # nexjs 최신 버전 설치
 
