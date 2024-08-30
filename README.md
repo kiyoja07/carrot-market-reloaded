@@ -1,6 +1,6 @@
 2024-08-30
 
-#8.2 Password Hashing
+#8.3 Iron Session
 
 # nexjs 최신 버전 설치
 
