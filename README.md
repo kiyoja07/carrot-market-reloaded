@@ -1,6 +1,6 @@
 2024-09-02
 
-#8.5 Email Log In
+#8.6 superRefine
 
 # nexjs 최신 버전 설치
 
