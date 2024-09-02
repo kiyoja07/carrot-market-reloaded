@@ -1,6 +1,6 @@
-2024-08-30
+2024-09-02
 
-#8.3 Iron Session
+#8.5 Email Log In
 
 # nexjs 최신 버전 설치
 
