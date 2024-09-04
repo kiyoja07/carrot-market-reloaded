@@ -1,6 +1,6 @@
 2024-09-04
 
-#8.7 Log Out
+#8.9 Middleware
 
 # nexjs 최신 버전 설치
 
