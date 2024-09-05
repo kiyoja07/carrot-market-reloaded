@@ -1,6 +1,6 @@
 2024-09-05
 
-#8.12 Authentication Middleware
+#9.0 Introduction
 
 # nexjs 최신 버전 설치
 
