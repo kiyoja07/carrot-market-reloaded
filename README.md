@@ -1,6 +1,6 @@
 2024-09-05
 
-#8.10 Matcher
+#8.12 Authentication Middleware
 
 # nexjs 최신 버전 설치
 
