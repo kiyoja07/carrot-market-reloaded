@@ -1,6 +1,6 @@
-2024-09-05
+2024-09-06
 
-#9.0 Introduction
+#9.1 Github Authentication
 
 # nexjs 최신 버전 설치
 
