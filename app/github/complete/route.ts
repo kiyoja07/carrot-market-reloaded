@@ -1,4 +1,6 @@
-import { notFound } from "next/navigation";
+import db from "@/lib/db";
+import getSession from "@/lib/session";
+import { notFound, redirect } from "next/navigation";
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
@@ -18,11 +20,47 @@ export async function GET(request: NextRequest) {
       Accept: "application/json",
     },
   });
-  const accessTokenData = await accessTokenResponse.json();
-  if ("error" in accessTokenData) {
+  const { error, access_token } = await accessTokenResponse.json();
+  if (error) {
     return new Response(null, {
       status: 400,
     });
   }
-  return Response.json({ accessTokenData });
+  const userProfileResponse = await fetch("https://api.github.com/user", {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+    cache: "no-cache",
+  });
+  const { id, avatar_url, login } = await userProfileResponse.json();
+  const user = await db.user.findUnique({
+    where: {
+      github_id: id + "",
+    },
+    select: {
+      id: true,
+    },
+  });
+  if (user) {
+    // 이미 가입한 사용자는 로그인 처리
+    const session = await getSession();
+    session.id = user.id;
+    await session.save();
+    return redirect("/profile");
+  }
+  // 가입하지 않은 사용자는 가입 처리
+  const newUser = await db.user.create({
+    data: {
+      username: login,
+      github_id: id + "",
+      avatar: avatar_url,
+    },
+    select: {
+      id: true,
+    },
+  });
+  const session = await getSession();
+  session.id = newUser.id;
+  await session.save();
+  return redirect("/profile");
 }

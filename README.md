@@ -1,6 +1,6 @@
 2024-09-06
 
-#9.2 Access Token
+#9.3 Github API
 
 # nexjs 최신 버전 설치
 
