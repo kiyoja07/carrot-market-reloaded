@@ -1,6 +1,6 @@
-2024-09-06
+2024-09-11
 
-#9.3 Github API
+#9.4 Code Challenge
 
 # nexjs 최신 버전 설치
 
