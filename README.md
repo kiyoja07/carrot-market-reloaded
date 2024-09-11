@@ -1,6 +1,6 @@
 2024-09-11
 
-#9.4 Code Challenge
+#9.5 SMS Token
 
 # nexjs 최신 버전 설치
 
