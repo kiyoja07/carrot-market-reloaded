@@ -1,6 +1,6 @@
-2024-09-11
+2024-09-12
 
-#9.5 SMS Token
+#9.7 Twilio SMS
 
 # nexjs 최신 버전 설치
 
@@ -46,3 +46,17 @@ https://react.dev/reference/react-dom/hooks/useFormState
 
 validator
 문자열 유효성 검사 라이브러리
+
+# zod : 스키마 선언 및 유효성 검사 라이브러리
+
+**zod를 사용하는 이유**
+typescript의 유효성 검증은 컴파일 시에만 발생.
+실제로 자바스크립트 프로그램이 실행 될 때는 아무런 역할을 하지 못함.
+⇒ zod의 유효성 검증은 컴파일이 끝난 프로그램의 실행 시점에서 발생
+
+파싱
+
+- parse() : 스키마를 기준으로 데이터의 유효성 확인
+- parseAsync() : 비동기 정제를 사용하는 경우 parseAsync를 사용해야 함
+- safeParse() : 유효성 검사에 실패해도 오류를 던지지 않음.
+- safeParseAsync() : safeParse의 비동기버전. 편의상 .spa() 로도 사용 가능
