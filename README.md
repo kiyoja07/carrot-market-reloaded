@@ -1,6 +1,6 @@
 2024-09-12
 
-#9.7 Twilio SMS
+#10.0 Introduction
 
 # nexjs 최신 버전 설치
 
