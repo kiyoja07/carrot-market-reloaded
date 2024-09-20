@@ -1,6 +1,6 @@
 2024-09-20
 
-#10.1 Tab Bar
+#10.2 Skeletons
 
 # nexjs 최신 버전 설치
 
@@ -60,3 +60,5 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 - parseAsync() : 비동기 정제를 사용하는 경우 parseAsync를 사용해야 함
 - safeParse() : 유효성 검사에 실패해도 오류를 던지지 않음.
 - safeParseAsync() : safeParse의 비동기버전. 편의상 .spa() 로도 사용 가능
+
+- loading.tsx : 로딩 중 일 때 화면
