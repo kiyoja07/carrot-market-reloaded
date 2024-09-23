@@ -1,6 +1,6 @@
 2024-09-23
 
-#10.4 Detail Skeleton
+#10.5 Product Detail
 
 # nexjs 최신 버전 설치
 
