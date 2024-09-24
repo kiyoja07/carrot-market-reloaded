@@ -1,6 +1,6 @@
 2024-09-24
 
-#10.6 Image Hostnames
+#10.7 Pagination Actions
 
 # nexjs 최신 버전 설치
 
