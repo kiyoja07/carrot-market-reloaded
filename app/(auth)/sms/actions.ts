@@ -8,6 +8,7 @@ import { redirect } from "next/navigation";
 import db from "@/lib/db";
 import getSession from "@/lib/session";
 
+// validator : 문자열 유효성 검사 라이브러리
 const phoneSchema = z
   .string()
   .trim()

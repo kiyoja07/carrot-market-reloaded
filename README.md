@@ -1,6 +1,6 @@
 2024-09-24
 
-#10.7 Pagination Actions
+#10.8 Recap
 
 # nexjs 최신 버전 설치
 
@@ -43,9 +43,6 @@ useFormState
 useFormState는 form action의 결과에 따라 상태를 업데이트할 수 있는 Hook입니다.
 ex) const [state, formAction] = useFormState(fn, initialState, permalink?);
 https://react.dev/reference/react-dom/hooks/useFormState
-
-validator
-문자열 유효성 검사 라이브러리
 
 # zod : 스키마 선언 및 유효성 검사 라이브러리
 
