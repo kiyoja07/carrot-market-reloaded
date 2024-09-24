@@ -1,6 +1,6 @@
-2024-09-23
+2024-09-24
 
-#10.5 Product Detail
+#10.6 Image Hostnames
 
 # nexjs 최신 버전 설치
 
