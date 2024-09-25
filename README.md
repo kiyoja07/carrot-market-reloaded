@@ -1,6 +1,6 @@
 2024-09-25
 
-#10.10 Recap
+#11.0 Introduction
 
 # nexjs 최신 버전 설치
 
