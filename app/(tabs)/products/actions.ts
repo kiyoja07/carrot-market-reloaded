@@ -11,10 +11,10 @@ export async function getMoreProducts(page: number) {
       photo: true,
       id: true,
     },
-    skip: page * 1,
-    take: 1,
+    skip: page * 1, // 페이지 번호 * 1 만큼 건너뛰기
+    take: 1, // 한 페이지에 1개씩
     orderBy: {
-      created_at: "desc",
+      created_at: "desc", // 최신순
     },
   });
   return products;

@@ -1,6 +1,6 @@
-2024-09-24
+2024-09-25
 
-#10.8 Recap
+#10.9 Infinite Scrolling
 
 # nexjs 최신 버전 설치
 
