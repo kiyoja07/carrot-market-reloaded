@@ -14,7 +14,7 @@ export default function ProductList({ initialProducts }: ProductListProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(0);
   const [isLastPage, setIsLastPage] = useState(false);
-  const trigger = useRef<HTMLSpanElement>(null);
+  const trigger = useRef<HTMLSpanElement>(null); // re-render해도 useRef은 값은 유지됨
   useEffect(() => {
     const observer = new IntersectionObserver(
       async (
@@ -23,27 +23,30 @@ export default function ProductList({ initialProducts }: ProductListProps) {
       ) => {
         const element = entries[0];
         if (element.isIntersecting && trigger.current) {
-          observer.unobserve(trigger.current);
-          setIsLoading(true);
+          // element.isIntersecting는 요소가 보일 때 true
+          // trigger.current를 통해 span 요소에 접근한다.
+          // trigger가 보일 때
+          observer.unobserve(trigger.current); // observer를 해제
+          setIsLoading(true); // 로딩 중
           const newProducts = await getMoreProducts(page + 1);
           if (newProducts.length !== 0) {
-            setPage((prev) => prev + 1);
+            setPage((prev) => prev + 1); // 페이지 번호 증가 -> useEffect 재실행
             setProducts((prev) => [...prev, ...newProducts]);
           } else {
             setIsLastPage(true);
           }
-          setIsLoading(false);
+          setIsLoading(false); // 로딩 완료
         }
       },
       {
-        threshold: 1.0,
+        threshold: 1.0, // 1.0이면 전체가 보일 때 콜백이 호출됨
       }
     );
     if (trigger.current) {
-      observer.observe(trigger.current);
+      observer.observe(trigger.current); // trigger가 보일 때 observer 실행
     }
     return () => {
-      observer.disconnect();
+      observer.disconnect(); // 컴포넌트가 사라질 때 observer를 해제
     };
   }, [page]);
   return (
