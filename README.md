@@ -1,6 +1,6 @@
 2024-09-26
 
-#11.1 Form Action
+#11.2 Product Upload
 
 # nexjs 최신 버전 설치
 
