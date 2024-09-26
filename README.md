@@ -1,6 +1,6 @@
 2024-09-26
 
-#11.2 Product Upload
+#11.3 Images Setup
 
 # nexjs 최신 버전 설치
 
