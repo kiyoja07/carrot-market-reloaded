@@ -1,6 +1,6 @@
-2024-09-26
+2024-09-30
 
-#11.4 Upload URLs
+#11.5 Image Upload
 
 # nexjs 최신 버전 설치
 
