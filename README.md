@@ -1,6 +1,6 @@
 2024-09-30
 
-#11.5 Image Upload
+#11.7 Recap
 
 # nexjs 최신 버전 설치
 

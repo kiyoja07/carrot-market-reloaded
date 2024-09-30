@@ -51,7 +51,7 @@ export default async function ProductDetail({
         <Image
           className="object-cover"
           fill
-          src={`${product.photo}/public`}
+          src={`${product.photo}/width=500,height=500`} // cloudflare image를 500x500으로 resize
           alt={product.title}
         />
       </div>
