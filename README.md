@@ -1,6 +1,6 @@
 2024-10-02
 
-#12.1 Intercepting Routes
+#12.2 Intercepting Recap
 
 # nexjs 최신 버전 설치
 
