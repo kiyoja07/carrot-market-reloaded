@@ -1,6 +1,6 @@
 2024-10-02
 
-#11.8 RHF Refactor
+#11.9 Recap
 
 # nexjs 최신 버전 설치
 
