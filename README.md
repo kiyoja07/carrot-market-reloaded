@@ -1,6 +1,6 @@
 2024-10-03
 
-#12.5 Modal Route
+#12.7 Modal UI
 
 # nexjs 최신 버전 설치
 
@@ -59,3 +59,11 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 - safeParseAsync() : safeParse의 비동기버전. 편의상 .spa() 로도 사용 가능
 
 - loading.tsx : 로딩 중 일 때 화면
+
+## Code Challenge
+
+#9.4 Code Challenge :
+
+#9.8 Code Challenge :
+
+#12.7 Modal UI
