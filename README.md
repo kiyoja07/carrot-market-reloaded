@@ -1,6 +1,6 @@
 2024-10-03
 
-#12.7 Modal UI - code challenge
+#13.0 Introduction
 
 # nexjs 최신 버전 설치
 
