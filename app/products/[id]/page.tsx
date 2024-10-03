@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-async function getIsOwner(userId: number) {
+export async function getIsOwner(userId: number) {
   const session = await getSession();
   if (session.id) {
     return session.id === userId;
@@ -14,7 +14,7 @@ async function getIsOwner(userId: number) {
   return false;
 }
 
-async function getProduct(id: number) {
+export async function getProduct(id: number) {
   const product = await db.product.findUnique({
     where: {
       id,

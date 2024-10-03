@@ -1,6 +1,6 @@
 2024-10-03
 
-#12.7 Modal UI
+#12.7 Modal UI - code challenge
 
 # nexjs 최신 버전 설치
 
@@ -67,3 +67,6 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 #9.8 Code Challenge :
 
 #12.7 Modal UI
+
+- modal의 close button을 client 컴포넌트로 분리
+- modal의 상품을 검색해서 상품 상세 정보를 보여준다.

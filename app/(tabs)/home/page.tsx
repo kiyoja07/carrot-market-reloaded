@@ -25,7 +25,14 @@ export type InitialProducts = Prisma.PromiseReturnType<
   typeof getInitialProducts
 >;
 
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export default async function Products() {
+  await delay(1000);
+  console.log("1초 지연 후 실행");
+
   const initialProducts = await getInitialProducts();
   return (
     <div>
