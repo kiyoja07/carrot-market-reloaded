@@ -1,6 +1,6 @@
-2024-10-02
+2024-10-03
 
-#12.3 Parallel Routes
+#12.5 Modal Route
 
 # nexjs 최신 버전 설치
 
