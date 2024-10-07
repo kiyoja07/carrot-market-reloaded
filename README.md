@@ -1,6 +1,6 @@
-2024-10-03
+2024-10-07
 
-#13.0 Introduction
+#13.2 revalidate
 
 # nexjs 최신 버전 설치
 
