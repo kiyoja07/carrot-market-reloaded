@@ -1,6 +1,6 @@
-2024-10-07
+2024-10-08
 
-#13.2 revalidate
+#13.3 revalidatePath
 
 # nexjs 최신 버전 설치
 
