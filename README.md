@@ -1,6 +1,6 @@
 2024-10-10
 
-#13.5 fetch Cache
+#13.6 Production Cache
 
 # nexjs 최신 버전 설치
 
