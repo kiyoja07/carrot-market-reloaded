@@ -1,6 +1,6 @@
-2024-10-08
+2024-10-10
 
-#13.4 revalidateTag
+#13.5 fetch Cache
 
 # nexjs 최신 버전 설치
 
