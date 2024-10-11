@@ -1,6 +1,6 @@
 2024-10-11
 
-#13.7 Route Segment Config
+#13.9 Recap part Two
 
 # nexjs 최신 버전 설치
 
