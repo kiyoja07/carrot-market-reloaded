@@ -37,12 +37,15 @@ export const metadata = {
   title: "Home",
 };
 
+// export const dynamic = "force-dynamic";
+export const revalidate = 60;
+
 export default async function Products() {
   await delay(1000);
   console.log("1초 지연 후 실행");
 
-  // const initialProducts = await getInitialProducts();
-  const initialProducts = await getCachedProducts();
+  const initialProducts = await getInitialProducts();
+  // const initialProducts = await getCachedProducts();
   const revalidate = async () => {
     "use server";
     revalidatePath("/home");

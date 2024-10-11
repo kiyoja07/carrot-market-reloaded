@@ -1,6 +1,6 @@
-2024-10-10
+2024-10-11
 
-#13.6 Production Cache
+#13.7 Route Segment Config
 
 # nexjs 최신 버전 설치
 
