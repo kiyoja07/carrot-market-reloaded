@@ -1,8 +1,7 @@
 "use server";
 
-import { getIsOwner, getProduct } from "@/app/products/[id]/page";
 import { CloseButton } from "@/components/button";
-import { formatToWon } from "@/lib/utils";
+import { formatToWon, getIsOwner, getProduct } from "@/lib/utils";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 

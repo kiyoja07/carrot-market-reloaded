@@ -11,16 +11,15 @@ import {
   revalidateTag,
 } from "next/cache";
 
-export async function getIsOwner(userId: number) {
-  const session = await getSession();
-  if (session.id) {
-    return session.id === userId;
-  }
+async function getIsOwner(userId: number) {
+  // const session = await getSession();
+  // if (session.id) {
+  //   return session.id === userId;
+  // }
   return false;
 }
 
-export async function getProduct(id: number) {
-  console.log("product");
+async function getProduct(id: number) {
   // fetch("https://api.com", {
   //   next: {
   //     revalidate: 60,
@@ -50,7 +49,6 @@ const getCachedProduct = nextCache(getProduct, ["product-detail"], {
 });
 
 async function getProductTitle(id: number) {
-  console.log("title");
   const product = await db.product.findUnique({
     where: {
       id,
@@ -144,4 +142,13 @@ export default async function ProductDetail({
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const products = await db.product.findMany({
+    select: {
+      id: true,
+    },
+  });
+  return products.map((product) => ({ id: product.id + "" }));
 }

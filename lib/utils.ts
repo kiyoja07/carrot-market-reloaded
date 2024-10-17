@@ -1,3 +1,5 @@
+import db from "./db";
+
 export function formatToTimeAgo(date: string): string {
   const dayInMs = 1000 * 60 * 60 * 24;
   const time = new Date(date).getTime();
@@ -8,4 +10,35 @@ export function formatToTimeAgo(date: string): string {
 }
 export function formatToWon(price: number): string {
   return price.toLocaleString("ko-KR");
+}
+
+export async function getIsOwner(userId: number) {
+  // const session = await getSession();
+  // if (session.id) {
+  //   return session.id === userId;
+  // }
+  return false;
+}
+
+export async function getProduct(id: number) {
+  // fetch("https://api.com", {
+  //   next: {
+  //     revalidate: 60,
+  //     tags: ["hello"],
+  //   },
+  // });
+  const product = await db.product.findUnique({
+    where: {
+      id,
+    },
+    include: {
+      user: {
+        select: {
+          username: true,
+          avatar: true,
+        },
+      },
+    },
+  });
+  return product;
 }

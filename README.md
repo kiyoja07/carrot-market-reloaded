@@ -1,6 +1,6 @@
-2024-10-11
+2024-10-17
 
-#13.9 Recap part Two
+#13.10 generateStaticParams
 
 # nexjs 최신 버전 설치
 
