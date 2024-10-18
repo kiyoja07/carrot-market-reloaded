@@ -4,6 +4,7 @@ import db from "@/lib/db";
 import getSession from "@/lib/session";
 import { redirect } from "next/navigation";
 import { productSchema } from "./schema";
+import { revalidatePath } from "next/cache";
 
 export async function uploadProduct(formData: FormData) {
   const data = {
@@ -35,6 +36,7 @@ export async function uploadProduct(formData: FormData) {
           id: true,
         },
       });
+      revalidatePath("/home"); // 새 상품이 등록되면 home 페이지를 새로고침(캐시 업데이트)
       redirect(`/products/${product.id}`);
       //redirect("/products")
     }

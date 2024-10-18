@@ -1,6 +1,6 @@
-2024-10-17
+2024-10-18
 
-#13.10 generateStaticParams
+#14.0 Introduction
 
 # nexjs 최신 버전 설치
 
@@ -70,3 +70,8 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 - modal의 close button을 client 컴포넌트로 분리
 - modal의 상품을 검색해서 상품 상세 정보를 보여준다.
+
+#13.12 Code Challenge
+
+- 캐싱 전략을 짜고 상품 업로드, 수정, 삭제할 때마다 바로 반영되도록 하기
+- 상품 수정 페이지 만들기
