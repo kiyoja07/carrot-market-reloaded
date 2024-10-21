@@ -1,6 +1,6 @@
-2024-10-18
+2024-10-21
 
-#14.0 Introduction
+#14.1 See Posts
 
 # nexjs 최신 버전 설치
 
