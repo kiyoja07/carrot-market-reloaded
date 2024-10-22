@@ -1,6 +1,6 @@
-2024-10-21
+2024-10-22
 
-#14.1 See Posts
+#14.2 Likes and Dislikes
 
 # nexjs 최신 버전 설치
 
