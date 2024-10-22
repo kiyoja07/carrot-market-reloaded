@@ -1,6 +1,6 @@
 2024-10-22
 
-#14.2 Likes and Dislikes
+#14.3 Cache Tags
 
 # nexjs 최신 버전 설치
 
