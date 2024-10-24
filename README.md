@@ -1,6 +1,6 @@
-2024-10-22
+2024-10-23
 
-#14.3 Cache Tags
+#14.4 useOptimistic
 
 # nexjs 최신 버전 설치
 
