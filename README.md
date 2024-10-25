@@ -1,6 +1,6 @@
-2024-10-23
+2024-10-25
 
-#14.4 useOptimistic
+#15.0 Introduction
 
 # nexjs 최신 버전 설치
 
