@@ -75,3 +75,8 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 - 캐싱 전략을 짜고 상품 업로드, 수정, 삭제할 때마다 바로 반영되도록 하기
 - 상품 수정 페이지 만들기
+
+#14.5 Recap
+
+- https://github.com/elian118/carrot-market-reloaded/commit/0ac7135181946df332ea24c60b751a52118c0695#diff-4ade2acfa9957a5c67cf37a05e766f7d0c38350957a815327b50238df3054cc6R22
+- 댓글 섹션 만들기

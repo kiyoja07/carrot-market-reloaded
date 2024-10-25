@@ -17,13 +17,13 @@ export default function LikeButton({
   postId,
 }: LikeButtonProps) {
   const [state, reducerFn] = useOptimistic(
-    { isLiked, likeCount },
+    { isLiked, likeCount }, // initial state가 최초 state로 들어감, state를 통해 UI에 값을 전달
     (previousState, payload) => ({
       isLiked: !previousState.isLiked,
       likeCount: previousState.isLiked
         ? previousState.likeCount - 1
         : previousState.likeCount + 1,
-    })
+    }) // state를 변경하는 reducerFn
   );
   const onClick = async () => {
     reducerFn(undefined);

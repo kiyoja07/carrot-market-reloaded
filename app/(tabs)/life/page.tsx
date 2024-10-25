@@ -39,7 +39,9 @@ export default async function Life() {
           href={`/posts/${post.id}`}
           className="pb-5 mb-5 border-b border-neutral-500 text-neutral-400 flex  flex-col gap-2 last:pb-0 last:border-b-0"
         >
-          <h2 className="text-white text-lg font-semibold">{post.title}</h2>
+          <h2 className="text-gray-900 dark:text-white text-lg font-semibold">
+            {post.title}
+          </h2>
           <p>{post.description}</p>
           <div className="flex items-center justify-between text-sm">
             <div className="flex gap-4 items-center">
