@@ -1,6 +1,6 @@
 2024-10-26
 
-#15.2 Chat Room
+#15.3 Messages
 
 # nexjs 최신 버전 설치
 

@@ -32,7 +32,7 @@ const PostDetail = async ({ params }: { params: { id: string } }) => {
         tags: [`like-status-${postId}`],
       }
     );
-    return cachedOperation(postId);
+    return cachedOperation();
   };
 
   if (isNaN(id)) return notFound();
@@ -42,7 +42,10 @@ const PostDetail = async ({ params }: { params: { id: string } }) => {
 
   const sessionId = await getSessionId();
 
-  const { likeCount, isLiked } = await getCachedLikedStatus(id, sessionId);
+  const { likeCount, isLiked } =
+    sessionId !== undefined
+      ? await getCachedLikedStatus(id, sessionId)
+      : { likeCount: 0, isLiked: false };
   const initComments = await getCachedComments(id);
 
   return (
