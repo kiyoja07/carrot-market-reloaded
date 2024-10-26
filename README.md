@@ -1,6 +1,6 @@
 2024-10-26
 
-#15.1 Models
+#15.2 Chat Room
 
 # nexjs 최신 버전 설치
 
