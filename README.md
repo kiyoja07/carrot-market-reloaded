@@ -1,6 +1,6 @@
 2024-10-26
 
-#15.3 Messages
+#15.6 Realtime Messages
 
 # nexjs 최신 버전 설치
 
