@@ -1,6 +1,6 @@
 2024-10-26
 
-#15.6 Realtime Messages
+#15.7 Code Challenge
 
 # nexjs 최신 버전 설치
 
@@ -80,3 +80,8 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 - https://github.com/elian118/carrot-market-reloaded/commit/0ac7135181946df332ea24c60b751a52118c0695#diff-4ade2acfa9957a5c67cf37a05e766f7d0c38350957a815327b50238df3054cc6R22
 - 댓글 섹션 만들기
+
+#15.7 Code Challenge
+
+1. 채팅 목록 만들기 (대화 상대 아바타, 이름, 최근 메시지 표시)
+2. 읽지 않은 메시지가 있다면 채팅 목록에 표시

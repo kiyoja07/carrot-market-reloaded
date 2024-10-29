@@ -3,10 +3,9 @@
 import Image from "next/image";
 import { formatToTimeAgo } from "@/lib/utils";
 import { EyeIcon } from "@heroicons/react/24/solid";
-
 import { InitialPost } from "@/app/posts/[id]/types";
-import Button2 from "@/components/button2";
 import { LikeButton } from "./views";
+import Button0 from "@/components/button0";
 
 type PostProps = {
   post: InitialPost;
@@ -51,9 +50,9 @@ const PostContent = ({
         </div>
         <div className="flex items-start gap-2">
           <LikeButton isLiked={isLiked} likeCount={likeCount} postId={postId} />
-          <Button2 type="button" href="/life" rounded outlined>
+          <Button0 type="button" href="/life" rounded outlined>
             목록으로
-          </Button2>
+          </Button0>
         </div>
       </div>
     </div>

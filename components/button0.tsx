@@ -17,7 +17,7 @@ type ButtonProps = {
   outlined?: boolean;
   fullWidth?: boolean;
 };
-const Button2 = ({
+const Button0 = ({
   children,
   icon,
   type = "button",
@@ -64,4 +64,4 @@ const Button2 = ({
   );
 };
 
-export default Button2;
+export default Button0;

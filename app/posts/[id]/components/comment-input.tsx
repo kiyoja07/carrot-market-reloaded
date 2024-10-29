@@ -2,9 +2,9 @@
 
 import React, { useEffect } from "react";
 import Input from "@/components/input";
-import Button2 from "@/components/button2";
 import { useComment } from "@/app/posts/[id]/hooks";
 import { CommentRefIds } from "@/app/posts/[id]/types";
+import Button0 from "@/components/button0";
 
 const CommentInput = ({ postId, userId }: CommentRefIds) => {
   const { errors, register, reset, onValid, setCommentRefId } = useComment();
@@ -25,9 +25,9 @@ const CommentInput = ({ postId, userId }: CommentRefIds) => {
           />
         </div>
         <div className="w-24">
-          <Button2 type="submit" outlined>
+          <Button0 type="submit" outlined>
             등록
-          </Button2>
+          </Button0>
         </div>
       </form>
     </div>

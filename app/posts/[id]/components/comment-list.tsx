@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import noUserImg from "@/public/no_user.png";
 import { removeComment } from "@/app/posts/[id]/services";
 import { useComment } from "@/app/posts/[id]/hooks";
-import Button2 from "@/components/button2";
+import Button0 from "@/components/button0";
 
 type CommentListProps = {
   postId: number;
@@ -75,13 +75,13 @@ const CommentList = ({
                 </div>
                 {userId === comment.userId && (
                   <div className="w-24">
-                    <Button2
+                    <Button0
                       outlined
                       rounded
                       onClick={() => removeComment(comment.id, postId)}
                     >
                       삭제
-                    </Button2>
+                    </Button0>
                   </div>
                 )}
               </div>

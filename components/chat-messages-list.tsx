@@ -1,6 +1,7 @@
 "use client";
 
 import { InitialChatMessages } from "@/app/chats/[id]/page";
+import { saveMessage } from "@/app/chats/actions";
 import { formatToTimeAgo } from "@/lib/utils";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
 import { createClient, RealtimeChannel } from "@supabase/supabase-js";
@@ -37,7 +38,7 @@ export default function ChatMessagesList({
     } = event;
     setMessage(value);
   };
-  const onSubmit = (event: React.FormEvent) => {
+  const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault(); // 새로고침 방지
     setMessages((prevMsgs) => [
       ...prevMsgs,
@@ -66,6 +67,7 @@ export default function ChatMessagesList({
         },
       },
     }); // chatRoomId에 메시지 전송
+    await saveMessage(message, chatRoomId);
     setMessage(""); // 입력된 message 초기화
   };
   useEffect(() => {
