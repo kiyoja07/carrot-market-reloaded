@@ -1,6 +1,6 @@
-2024-10-26
+2024-10-29
 
-#16.1 Live Input
+#16.2 Live Streaming
 
 # nexjs 최신 버전 설치
 
