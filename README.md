@@ -1,6 +1,6 @@
 2024-10-29
 
-#16.2 Live Streaming
+#17.0 Introduction
 
 # nexjs 최신 버전 설치
 
