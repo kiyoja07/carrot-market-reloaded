@@ -1,6 +1,6 @@
 2024-10-26
 
-#15.7 Code Challenge
+#16.1 Live Input
 
 # nexjs 최신 버전 설치
 
