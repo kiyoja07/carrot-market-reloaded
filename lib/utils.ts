@@ -1,4 +1,5 @@
 import db from "./db";
+import noUserImg from "@/public/no_user.png";
 // import chalk from 'chalk';
 
 export function formatToTimeAgo(date: string): string {
@@ -7,7 +8,8 @@ export function formatToTimeAgo(date: string): string {
   const now = new Date().getTime();
   const diff = Math.round((time - now) / dayInMs);
   const formatter = new Intl.RelativeTimeFormat("ko");
-  return formatter.format(diff, "days");
+  const isToday = formatter.format(diff, "days") === "0일 전";
+  return isToday ? "오늘" : formatter.format(diff, "days");
 }
 export function formatToWon(price: number): string {
   return price.toLocaleString("ko-KR");
@@ -43,6 +45,19 @@ export async function getProduct(id: number) {
   });
   return product;
 }
+
+export const parsePhotoUrl = (
+  photoUrl: string | null,
+  format: "public" | "avatar" = "public"
+) =>
+  photoUrl
+    ? photoUrl.includes(process.env.NEXT_PUBLIC_CLOUDFLARE_IMAGE_DELIVERY_URL!)
+      ? `${photoUrl}/${format}`
+      : photoUrl
+    : noUserImg;
+
+export const removeDupElements = (arr: any[]) =>
+  arr.filter((item, index) => arr.indexOf(item) === index);
 
 // export const setQueryLog = (
 //   roll: string,

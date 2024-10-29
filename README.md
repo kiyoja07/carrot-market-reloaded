@@ -83,5 +83,7 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 #15.7 Code Challenge
 
+- https://github.com/elian118/carrot-market-reloaded/commit/d271779a0ef21ea0e5bbe9a2d5dc227e0d95471d
+
 1. 채팅 목록 만들기 (대화 상대 아바타, 이름, 최근 메시지 표시)
 2. 읽지 않은 메시지가 있다면 채팅 목록에 표시

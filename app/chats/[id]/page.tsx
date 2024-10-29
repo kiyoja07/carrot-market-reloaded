@@ -3,6 +3,7 @@ import db from "@/lib/db";
 import getSession from "@/lib/session";
 import { Prisma } from "@prisma/client";
 import { notFound } from "next/navigation";
+import { GoBackBtn } from "./components";
 
 async function getRoom(id: string) {
   const room = await db.chatRoom.findUnique({
@@ -74,12 +75,15 @@ export default async function ChatRoom({ params }: { params: { id: string } }) {
     return notFound();
   }
   return (
-    <ChatMessagesList
-      chatRoomId={params.id}
-      userId={session.id!}
-      username={user.username}
-      avatar={user.avatar!}
-      initialMessages={initialMessages}
-    />
+    <div className="relative">
+      <ChatMessagesList
+        chatRoomId={params.id}
+        userId={session.id!}
+        username={user.username}
+        avatar={user.avatar!}
+        initialMessages={initialMessages}
+      />
+      <GoBackBtn />
+    </div>
   );
 }
