@@ -1,6 +1,6 @@
 2024-10-30
 
-#17.2 Private Folders
+#17.4 Logging
 
 # nexjs 최신 버전 설치
 
