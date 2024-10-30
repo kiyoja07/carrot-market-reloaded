@@ -1,6 +1,6 @@
 2024-10-30
 
-#17.1 Fonts
+#17.2 Private Folders
 
 # nexjs 최신 버전 설치
 
