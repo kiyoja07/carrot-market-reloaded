@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchFromAPI } from "@/app/extras/actions";
+import { fetchFromAPI } from "@/app/_extras/actions";
 
 export default function HackedComponent({ data }: any) {
   fetchFromAPI();
