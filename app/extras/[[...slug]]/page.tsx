@@ -44,7 +44,7 @@ export default async function Extras({
       <form action={action}>
         <button>revalidate</button>
       </form>
-      <HackedComponent data={data} />
+      {/* <HackedComponent data={data} /> */}
     </div>
   );
 }

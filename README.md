@@ -1,6 +1,6 @@
 2024-10-31
 
-#17.5 Security
+#17.6 Images
 
 # nexjs 최신 버전 설치
 
