@@ -1,6 +1,6 @@
 2024-11-01
 
-#18.2 Deploying
+#18.4 Environment Variables
 
 # nexjs 최신 버전 설치
 
