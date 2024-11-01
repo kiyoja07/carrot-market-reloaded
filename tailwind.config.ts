@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         roboto: "var(--roboto-text)",
-        rubick: "var(--rubick-text)",
+        rubik: "var(--rubik-text)",
         metallica: "var(--metallica-text)",
       },
       margin: {

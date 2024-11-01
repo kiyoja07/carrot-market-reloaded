@@ -11,11 +11,11 @@ const roboto = Roboto({
   style: ["normal"],
   variable: "--roboto-text",
 });
-const rubick = Rubik_Scribble({
+const rubik = Rubik_Scribble({
   weight: "400",
   style: "normal",
   subsets: ["latin"],
-  variable: "--rubick-text",
+  variable: "--rubik-text",
 });
 const metallica = localFont({
   src: "./metallica.ttf",
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${roboto.variable} ${rubick.variable} ${metallica.variable} bg-neutral-900 text-white max-w-screen-sm mx-auto`}
+        className={`${inter.className} ${roboto.variable} ${rubik.variable} ${metallica.variable} bg-neutral-900 text-white max-w-screen-sm mx-auto`}
       >
         {children}
       </body>
