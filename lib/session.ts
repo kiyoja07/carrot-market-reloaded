@@ -18,6 +18,8 @@ export default function getSession() {
 // 사용자 정보(id) 가져오기
 export const getUserProfile = async () => {
   const session = await getSession(); // 복호화 된 쿠키 반환
+  console.log(`session: ${session}`);
+
   const user = session.id
     ? await db.user.findUnique({
         where: { id: session.id },
