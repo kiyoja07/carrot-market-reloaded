@@ -71,6 +71,8 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 - 그 후 npx prisma migrate dev --create-only : migration 파일들만 생성
 - 새로 생성된 postgresql 기준 migrations를 vercel에 업로드한다.
 
+- settings -> Environment Variables에서 복사/붙여넣기로 env variables 입력 -> Deployment -> Redeploy
+
 ## Code Challenge
 
 #9.4 Code Challenge :
