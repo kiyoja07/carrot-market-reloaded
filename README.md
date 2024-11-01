@@ -60,6 +60,10 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 - loading.tsx : 로딩 중 일 때 화면
 
+# Github Oauth
+
+- settings -> Developer Settings -> Oauth Apps
+
 # Deploy
 
 - npm i -g vercel
@@ -73,7 +77,7 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 
 - settings -> Environment Variables에서 복사/붙여넣기로 env variables 입력 -> Deployment -> Redeploy
 
-## Code Challenge
+# Code Challenge
 
 #9.4 Code Challenge :
 

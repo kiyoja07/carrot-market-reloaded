@@ -1,5 +1,5 @@
 import db from "@/lib/db";
-import getSession from "@/lib/session";
+import getSession, { getUserProfile } from "@/lib/session";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 
@@ -19,8 +19,9 @@ async function getUser() {
 }
 
 async function Username() {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
-  const user = await getUser();
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+  // const user = await getUser();
+  const user = await getUserProfile();
   return <h1>Welcome! {user?.username}!</h1>;
 }
 
