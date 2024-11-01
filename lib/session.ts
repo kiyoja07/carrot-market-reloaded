@@ -19,13 +19,18 @@ export default function getSession() {
 export const getUserProfile = async () => {
   const session = await getSession(); // 복호화 된 쿠키 반환
   console.log(`session.id: ${session.id}`);
+  if (!session.id) return notFound(); // 사용자 정보 없다면 404 처리
+  const user = await db.user.findUnique({
+    where: { id: session.id },
+    select: { id: true, username: true, avatar: true },
+  });
 
-  const user = session.id
-    ? await db.user.findUnique({
-        where: { id: session.id },
-        select: { id: true, username: true, avatar: true },
-      })
-    : null;
+  // const user = session.id
+  //   ? await db.user.findUnique({
+  //       where: { id: session.id },
+  //       select: { id: true, username: true, avatar: true },
+  //     })
+  //   : null;
   console.log(`getUserProfile user: ${user}`);
   return user ? user : notFound(); // 확인된 사용자 정보 없다면 404 처리
 };

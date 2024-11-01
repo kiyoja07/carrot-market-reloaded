@@ -19,7 +19,7 @@ async function getUser() {
 }
 
 async function Username() {
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   // const user = await getUser();
 
   const user = await getUserProfile();
