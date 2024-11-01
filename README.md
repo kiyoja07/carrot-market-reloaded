@@ -1,6 +1,6 @@
 2024-11-01
 
-#18.4 Environment Variables
+#18.5 Conclusions
 
 # nexjs 최신 버전 설치
 
@@ -76,6 +76,8 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 - 새로 생성된 postgresql 기준 migrations를 vercel에 업로드한다.
 
 - settings -> Environment Variables에서 복사/붙여넣기로 env variables 입력 -> Deployment -> Redeploy
+
+- settings - Functions에 가서 function region 을 DB 또는 유저 위치와 가깝게 변경 -> 속도 향상
 
 # Code Challenge
 
