@@ -67,7 +67,7 @@ typescript의 유효성 검증은 컴파일 시에만 발생.
 - vercel link : vercel 프로젝트와 연결
 - vercel env pull .env.development.local : Pull your latest environment variables -> .env.development.local 파일이 다운로드되고 vercel 환경 변수가 저장된다.
 
-- dev에서는 sqlite로 개발하고 deploy는 postgresql로 할 때는 기존 prisma/migrations 폴더는 삭제한다.
+- dev에서는 sqlite로 개발하고 deploy는 postgresql로 할 때는 충돌을 피하기 위해 기존 prisma/migrations 폴더는 삭제한다.
 - 그 후 npx prisma migrate dev --create-only : migration 파일들만 생성
 - 새로 생성된 postgresql 기준 migrations를 vercel에 업로드한다.
 
