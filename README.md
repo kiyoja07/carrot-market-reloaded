@@ -1,6 +1,6 @@
-2024-10-31
+2024-11-01
 
-#18.1 Code Challenge
+#18.2 Deploying
 
 # nexjs 최신 버전 설치
 
