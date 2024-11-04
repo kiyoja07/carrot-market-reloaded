@@ -1,6 +1,6 @@
-2024-11-01
+2024-11-04
 
-#18.5 Conclusions
+#19.1 Connecting To PlanetScale
 
 # nexjs 최신 버전 설치
 
